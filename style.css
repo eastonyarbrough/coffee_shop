@@ -1,0 +1,97 @@
+html {
+    background: url("images/bkgImg.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#gridContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 35px 105px 1fr 120px;
+}
+
+nav {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: slategray;
+    border-radius: 10px;
+}
+
+nav>a {
+    float: left;
+    padding: 6px 10px;
+    font-size: 17px;
+}
+
+header {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+header>div {
+    width: 80vw;
+    background-color: slategray;
+    border-radius: 50%;
+}
+
+header>div>h1 {
+    text-align: center;
+}
+
+form {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 40px;
+}
+
+.itemGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 80px 70px 30px;
+    margin: 40px 0;
+    border: 10px groove slategray;
+    background-color: slategray;
+}
+
+.itemGrid>img {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding: 20px;
+    width: 30vh;
+    margin: 0 auto;
+}
+
+.itemTxt {
+    text-align: center;
+}
+
+.flexInput {
+    display: flex;
+    justify-content: center;
+}
+
+#submitBtn {
+    display: flex;
+    justify-content: center;
+}
+
+/*TABLET AND DESKTOP SCREEN SIZES NEED HEADER>DIV *WIDTH = 30vw*/
+/*TABLET AND DESKTOP SCREEN SIZES NEED .ITEMGRID>IMG *WIDTH = 40(ish)vw (INSTEAD OF vh)*/

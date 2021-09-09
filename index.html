@@ -5,8 +5,68 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>The Coffee Shop</title>
+        <link rel="stylesheet" href="style.css"></link>
     </head>
     <body>
-        
+        <div id=gridContainer>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#cart">Cart</a>
+            </nav>
+            <header id="flexHeader">
+                <div>
+                    <h1>Outback Coffee</h1>
+                </div>
+            </header>
+            <form id="myForm">
+                <main>
+                    <div class="itemGrid" id="espresso">
+                        <img src="images/espresso.jpg"></img>
+                        <h1 class="itemTxt">Espresso</h1>
+                        <h2 class="itemTxt">Price: $2.99</h2>
+                        <div class="flexInput">
+                            <lable>Quantity: </lable>
+                            <input type="number"></input>
+                        </div>
+                    </div>
+                    <div class="itemGrid" id="latte">
+                        <img src="images/latte.jpg"></img>
+                        <h1 class="itemTxt">Latte</h1>
+                        <h2 class="itemTxt">Price: $3.50</h2>
+                        <div class="flexInput">
+                            <lable>Quantity: </lable>
+                            <input type="number"></input>
+                        </div>
+                    </div>
+                    <div class="itemGrid" id="cappuccino">
+                        <img src="images/cappuccino.jpg"></img>
+                        <h1 class="itemTxt">Cappuccino</h1>
+                        <h2 class="itemTxt">Price: $3.99</h2>
+                        <div class="flexInput">
+                            <lable>Quantity: </lable>
+                            <input type="number"></input>
+                        </div>
+                    </div>
+                    <div class="itemGrid" id="macchiato">
+                        <img src="images/macchiato.jpg"></img>
+                        <h1 class="itemTxt">Macchiato</h1>
+                        <h2 class="itemTxt">Price: $3.50</h2>
+                        <div class="flexInput">
+                            <lable>Quantity: </lable>
+                            <input type="number"></input>
+                        </div>
+                    </div>
+                    <div id="submitBtn">
+                        <button>Checkout</button>
+                    </div>
+                </main>
+            </form>
+            <footer>
+                <p></p>
+                <p></p>
+                <p></p>
+            </footer>
+        </div>
     </body>
 </html>
