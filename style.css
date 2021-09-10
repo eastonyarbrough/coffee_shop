@@ -25,6 +25,14 @@ nav>a {
     float: left;
     padding: 6px 10px;
     font-size: 17px;
+    text-decoration: none;
+    color: black;
+}
+
+nav>a:hover {
+    transform: translateY(-3px);
+    transition: 0.5s ease-out;
+    text-decoration: underline;
 }
 
 header {
@@ -64,7 +72,7 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 80px 70px 30px;
-    margin: 40px 0;
+    margin: 30px;
     border: 10px groove slategray;
     background-color: slategray;
 }
@@ -91,6 +99,76 @@ main {
 #submitBtn {
     display: flex;
     justify-content: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+@media only screen and (min-width: 980px) {
+    /* Noted Full-Screen Size Changes */
+    header>div {
+        width: 30vw;
+    }
+    
+    /* Main Grid Section Media Screen */
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 40px;
+    }
+
+    #espresso {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    #latte {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    #cappuccino {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    #macchiato {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    #submitBtn {
+        display: flex;
+        justify-content: center;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    /* Item Grid Sections Media Screen */
+    .itemGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 80px 70px 20px;
+        margin: 5%;
+    }
+
+    .itemGrid>img {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 4;
+        padding: 20px 0;
+    }
 }
 
 /*TABLET AND DESKTOP SCREEN SIZES NEED HEADER>DIV *WIDTH = 30vw*/
