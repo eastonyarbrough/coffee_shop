@@ -6,6 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>The Coffee Shop</title>
         <link rel="stylesheet" href="style.css"></link>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Allison&display=swap" rel="stylesheet"> 
     </head>
     <body>
         <div id=gridContainer>
@@ -28,7 +31,7 @@
                         <div class="flexInput">
                             <option id="espPrice" value="2.99"></option>
                             <lable>Quantity: </lable>
-                            <input type="number" id="espQuan"></input>
+                            <input type="number" min="0"  id="espQuan"></input>
                         </div>
                     </div>
                     <div class="itemGrid" id="latte">
@@ -38,7 +41,7 @@
                         <div class="flexInput">
                             <option id="latPrice" value="3.50"></option>
                             <lable>Quantity: </lable>
-                            <input type="number" id="latQuan"></input>
+                            <input type="number" min="0" id="latQuan"></input>
                         </div>
                     </div>
                     <div class="itemGrid" id="cappuccino">
@@ -48,7 +51,7 @@
                         <div class="flexInput">
                             <option id="capPrice" value="3.99"></option>
                             <lable>Quantity: </lable>
-                            <input type="number" id="capQuan"></input>
+                            <input type="number" min="0" id="capQuan"></input>
                         </div>
                     </div>
                     <div class="itemGrid" id="macchiato">
@@ -58,25 +61,21 @@
                         <div class="flexInput">
                             <option id="macPrice" value="3.50"></option>
                             <lable>Quantity: </lable>
-                            <input type="number" id="macQuan"></input>
+                            <input type="number" min="0" id="macQuan"></input>
                         </div>
                     </div>
-                    <div id="submitBtn">
-                        <div id="btnPlatform">
-                            <button>Checkout</button>
-                            <p>
-                                <b>Total: </b>
-                                <p id="total"></p>
-                            </p>
-                            
+                    <div id="totalContainer">
+                        <div id="totalPlatform">
+                            <p class="platAsset"><b>Total: </b></p>
+                            <p id="total" class="platAsset"></p>
                         </div>
                     </div>
                 </main>
             </form>
             <footer>
-                <p></p>
-                <p></p>
-                <p></p>
+                <p class="ftrContent">Email: madeupemail123@outbackcoffee.com</p>
+                <p class="ftrContent">Our URL: www.outbackcoffee.madeup.com</p>
+                <p class="ftrContent">Our Address: 123 Street Dr. Thiscity, Thisstate</p>
             </footer>
         </div>
         <script src="index.js"></script>
