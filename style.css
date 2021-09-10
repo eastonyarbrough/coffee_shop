@@ -9,7 +9,7 @@ html {
 #gridContainer {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 35px 105px 1fr 120px;
+    grid-template-rows: 35px 105px 1fr 180px;
 }
 
 nav {
@@ -23,10 +23,11 @@ nav {
 
 nav>a {
     float: left;
-    padding: 6px 10px;
-    font-size: 17px;
+    padding: 0 10px;
+    font-size: 28px;
     text-decoration: none;
     color: black;
+    font-family: 'Allison';
 }
 
 nav>a:hover {
@@ -52,7 +53,10 @@ header>div {
 }
 
 header>div>h1 {
+    margin: auto;
     text-align: center;
+    font-size: 60px;
+    font-family: 'Allison';
 }
 
 form {
@@ -89,6 +93,8 @@ main {
 
 .itemTxt {
     text-align: center;
+    font-family: 'Allison';
+    font-size: 30px;
 }
 
 .flexInput {
@@ -96,7 +102,7 @@ main {
     justify-content: center;
 }
 
-#submitBtn {
+#totalContainer {
     display: flex;
     justify-content: center;
     grid-column-start: 1;
@@ -105,15 +111,60 @@ main {
     grid-row-end: 6;
 }
 
-#btnPlatform {
+#totalPlatform {
     width: 180px;
     height: 50px;
     border: 10px groove slategray;
     background-color: slategray;
+    text-align: center;
 }
 
-#btnPlatform>p {
+.platAsset {
     display: inline-block;
+    font-family: 'Allison';
+    font-size: 25px;
+    margin: 10px auto ;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-color: slategray;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.ftrContent {
+    padding: 0 10px;
+    font-family: 'Allison';
+    font-size: 28px;
+    margin: auto;
+}
+
+@media only screen and (min-width: 1000px) {
+    #gridContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 35px 105px 1fr 80px;
+    }
+    
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        background-color: slategray;
+        border-radius: 10px;
+        margin-top: 30px;
+    }
 }
 
 @media only screen and (min-width: 980px) {
@@ -156,7 +207,7 @@ main {
         grid-row-start: 2;
         grid-row-end: 3;
     }
-    #submitBtn {
+    #totalContainer {
         display: flex;
         justify-content: center;
         grid-column-start: 1;
@@ -181,6 +232,3 @@ main {
         padding: 20px 0;
     }
 }
-
-/*TABLET AND DESKTOP SCREEN SIZES NEED HEADER>DIV *WIDTH = 30vw*/
-/*TABLET AND DESKTOP SCREEN SIZES NEED .ITEMGRID>IMG *WIDTH = 40(ish)vw (INSTEAD OF vh)*/
