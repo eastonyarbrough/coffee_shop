@@ -26,6 +26,7 @@
                         <h1 class="itemTxt">Espresso</h1>
                         <h2 class="itemTxt">Price: $2.99</h2>
                         <div class="flexInput">
+                            <option id="espPrice" value="2.99"></option>
                             <lable>Quantity: </lable>
                             <input type="number" id="espQuan"></input>
                         </div>
@@ -35,6 +36,7 @@
                         <h1 class="itemTxt">Latte</h1>
                         <h2 class="itemTxt">Price: $3.50</h2>
                         <div class="flexInput">
+                            <option id="latPrice" value="3.50"></option>
                             <lable>Quantity: </lable>
                             <input type="number" id="latQuan"></input>
                         </div>
@@ -44,6 +46,7 @@
                         <h1 class="itemTxt">Cappuccino</h1>
                         <h2 class="itemTxt">Price: $3.99</h2>
                         <div class="flexInput">
+                            <option id="capPrice" value="3.99"></option>
                             <lable>Quantity: </lable>
                             <input type="number" id="capQuan"></input>
                         </div>
@@ -53,12 +56,20 @@
                         <h1 class="itemTxt">Macchiato</h1>
                         <h2 class="itemTxt">Price: $3.50</h2>
                         <div class="flexInput">
+                            <option id="macPrice" value="3.50"></option>
                             <lable>Quantity: </lable>
                             <input type="number" id="macQuan"></input>
                         </div>
                     </div>
                     <div id="submitBtn">
-                        <button>Checkout</button>
+                        <div id="btnPlatform">
+                            <button>Checkout</button>
+                            <p>
+                                <b>Total: </b>
+                                <p id="total"></p>
+                            </p>
+                            
+                        </div>
                     </div>
                 </main>
             </form>
